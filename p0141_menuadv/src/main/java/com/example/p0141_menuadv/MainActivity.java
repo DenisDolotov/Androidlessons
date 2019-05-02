@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onPrepareOptionsMenu(Menu menu) {
-        // TODO Auto-generated method stub
+
         // пункты меню с ID группы = 1 видны, если в CheckBox стоит галка
         menu.setGroupVisible(R.id.group1, chb.isChecked());
         return super.onPrepareOptionsMenu(menu);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     // обработка нажатий
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
+
         StringBuilder sb = new StringBuilder();
 
         // Выведем в TextView информацию о нажатом пункте меню

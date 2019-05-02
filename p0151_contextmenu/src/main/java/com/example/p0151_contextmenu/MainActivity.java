@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
-        // TODO Auto-generated method stub
+
         int i = v.getId();
         if (i == R.id.tvColor) {
             menu.add(0, MENU_COLOR_RED, 0, "Red");
