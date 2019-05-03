@@ -1,8 +1,10 @@
 package com.example.p0151_contextmenu;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -45,4 +47,31 @@ public class MainActivity extends AppCompatActivity {
             menu.add(0, MENU_SIZE_30, 0, "30");
         }
     }
+
+    public boolean onContextItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int i = item.getItemId();// пункты меню для tvColor
+        if (i == MENU_COLOR_RED) {
+            tvColor.setTextColor(Color.RED);
+            tvColor.setText("Text color = red");
+        } else if (i == MENU_COLOR_GREEN) {
+            tvColor.setTextColor(Color.GREEN);
+            tvColor.setText("Text color = green");
+        } else if (i == MENU_COLOR_BLUE) {
+            tvColor.setTextColor(Color.BLUE);
+            tvColor.setText("Text color = blue");
+            // пункты меню для tvSize
+        } else if (i == MENU_SIZE_22) {
+            tvSize.setTextSize(22);
+            tvSize.setText("Text size = 22");
+        } else if (i == MENU_SIZE_26) {
+            tvSize.setTextSize(26);
+            tvSize.setText("Text size = 26");
+        } else if (i == MENU_SIZE_30) {
+            tvSize.setTextSize(30);
+            tvSize.setText("Text size = 30");
+        }
+        return super.onContextItemSelected(item);
+    }
+
 }
