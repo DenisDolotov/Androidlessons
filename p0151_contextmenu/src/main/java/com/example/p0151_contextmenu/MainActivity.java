@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onContextItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
         int i = item.getItemId();// пункты меню для tvColor
         if (i == MENU_COLOR_RED) {
             tvColor.setTextColor(Color.RED);
