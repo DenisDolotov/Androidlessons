@@ -1,0 +1,5 @@
+<resources>
+    <string name="regular">Обычный</string>
+    <string name="horizontal">Горизонтальный</string>
+    <string name="app_name">ProgressDialog</string>
+</resources>
